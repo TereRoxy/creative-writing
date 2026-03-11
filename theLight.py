@@ -53,7 +53,7 @@ class Visible(Light):
     """
     The visible light is the range of frequencies that can be perceived by the human eye, it is what we interact with daily
     """
-    def __init__(self, frequency=5e14): # the frequency of visible light
+    def __init__(self, frequency=5e14): # the frequency of visible light    -- "Never let them take the light behind your eyes" -- MCR
         super().__init__(frequency)  
         self.index_of_refraction = 1.33      
         self.is_visible = True     # the visible nature
@@ -63,7 +63,7 @@ class Infrared(Light):
     """
     The infrared light has the lowest energy and the longest wavelength, it is the heat that we feel, but mostly ignore
     """
-    def __init__(self, frequency=1e12): # the frequency of infrared light
+    def __init__(self, frequency=1e12): # the frequency of infrared light    -- "I'm going under \n Drowning in you \n I'm falling forever" -- Evanescence
         super().__init__(frequency)  
         self.index_of_refraction = 1.5   
         self.is_visible = False     # the invisible nature
@@ -96,4 +96,5 @@ if __name__ == "__main__":
         while True:
             main()
     except KeyboardInterrupt:
+
         print("\nThe system cycle light show has been interrupted. The observer has left the stage. The wave function returns to chaos\n")
